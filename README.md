@@ -15,7 +15,9 @@ should:
 * [ ] Contact Andrei Jiroh regarding this bot account's login information. Since my login info is stored in The Pis Team's [Vaultwarden instance](https://vault.madebythepins.tk),
 you need to create a new account and then ask him to add to an special Hydralite org. This is where my login information and GitHub PAT is stored.
 * [ ] Finally, add my GitHub PAT as encrypted secret for GitHub Actions organization-wide with variable name `HYDRABOT_GH_PAT`. Update any workflows to use this secret, excluding
-for stuff like `actions/checkout@v2`.
+for stuff such as:
+  * checking out the current repo with `actions/checkout`
+  * setting up Node.js, Python, Rust, and Dart/Flutter
 
 ## Maintainer's Usage Manual
 
