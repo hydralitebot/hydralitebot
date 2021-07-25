@@ -18,7 +18,7 @@ contact Andrei Jiroh so he can use it. Thank you for your help.
 ## Setup / Initial Steps
 
 * Create an account at <https://vault.madebythepins.tk> and verify your account from the address specified above.
-* Go to your account settings and copy your fingerprint pharse (for example, Andrei Jiroh's fingerprint pharse is `rambling-reroute-stunner-overhand-bullfight`).
+* [Go to your account settings and copy your fingerprint pharse](https://bitwarden.com/help/article/fingerprint-phrase/) (for example, Andrei Jiroh's fingerprint pharse is `rambling-reroute-stunner-overhand-bullfight`).
 Send that, along with your account email address to Andrei Jiroh over Discord so he can invite you to that org with permissions (maintainers has Owner/Admin role,
 while regular developers with push access should have User role instead).
 * Accept the org invite from email. After accepting, you can optinally remove Andrei Jiroh from the org or give him lower permissions, but if you REALLY trust him,
@@ -26,7 +26,7 @@ the Admin/Manager role across all collections should be fine.
 
 ## Using Bitwarden's Official Clients
 
-Since Vaultwarden is Rust reimplemention of Bitwarden Self-hosted Server, which is resource-intenstive for an Raspberry Pi to run, it's compartible to the official
+Since Vaultwarden is an Rust reimplemention of Bitwarden Self-hosted Server, which is resource-intenstive for an Raspberry Pi to run, it's compartible to the official
 Bitwarden clients, as long as things don't break.
 
 After installing one of their clients, [configure your client](https://bitwarden.com/help/article/change-client-environment/) to point into our Vaultwarden instance
