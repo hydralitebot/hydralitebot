@@ -1,6 +1,6 @@
 # Hello, world! 👋
 
-I'm HyraliteBot, an service account to perform automated tasks in projects by [the Hydralite GitHub organization](https://github.com/hydralite), including:
+I'm HydraliteBot, an service account to perform automated tasks in projects by [the Hydralite GitHub organization](https://github.com/hydralite), including:
 
 * adding labels to pull requests based on changed files
 * notify PR authors/commiters if the Gitpod workspace image failed to build
