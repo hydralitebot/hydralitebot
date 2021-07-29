@@ -3,13 +3,14 @@
 To use me in API calls and actions in an GitHub Actions workflow, either use `${{ secrets.HYDRABOT_GH_PAT }}` in the action's `with.token` key (sometimes its `with.gh-token` or `with.repo-token` or as an environment variable, like this:
 
 ```yml
+# in an usual script
 - name: Publish cz-commitlint-config package
   run: |
     cd cz-commitlint-config
     echo "@hydralite:registry=https://npm.pkg.github.com"
     npm version ${{ github.ref }} # assuming it was triggered by an pushing an Git tag
     npm publish
-  with:
+  env:
     NPM_TOKEN: ${{ secrets.HYDRABOT_BH_PAT }}
 
 # Copied from https://github.com/code-server-boilerplates/nodejs-starter/blob/7bffa154b7e8c6246b25a19094f578cd689fabe3/.github/workflows/update-labels.yml#L17-L36
