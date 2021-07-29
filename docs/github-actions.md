@@ -6,11 +6,11 @@ To use me in API calls and actions in an GitHub Actions workflow, either use `${
 - name: Publish cz-commitlint-config package
   run: |
     cd cz-commitlint-config
-    echo "@hydralite/cz-commitlint-config;token=${NPM_GH_PKG_TOKEN},registry=https://npmjs.pkg.github.com
+    echo "@hydralite:registry=https://npm.pkg.github.com"
     npm version ${{ github.ref }} # assuming it was triggered by an pushing an Git tag
     npm publish
   with:
-    NPM_GH_PKG_TOKEN: ${{ secrets.HYDRABOT_BH_PAT }}
+    NPM_TOKEN: ${{ secrets.HYDRABOT_BH_PAT }}
 
 # Copied from https://github.com/code-server-boilerplates/nodejs-starter/blob/7bffa154b7e8c6246b25a19094f578cd689fabe3/.github/workflows/update-labels.yml#L17-L36
 # The difference would be in this one we use HYDRABOT_GH_PAT instead of the usual GH_SERVICE_ACCOUNT_API_KEY from The Pins Team's projects.
