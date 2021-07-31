@@ -14,6 +14,7 @@ should:
 * [ ] Invite me to the organization as regular member. Once accepted, give me atleat `write` or `maintain` permissions in public repos, like the main Hydralite repo.
 * [ ] Contact Andrei Jiroh regarding this bot account's login information. Since my login info is stored in The Pins Team's [Vaultwarden instance](https://vault.madebythepins.tk),
 you need to create a new account and then ask him to add to an special Hydralite org. This is where my login information and GitHub PAT is stored.
+More details on [this document](./docs/bitwarden-org-vault.md)
 * [ ] Finally, add my GitHub PAT as encrypted secret for GitHub Actions organization-wide with variable name `HYDRABOT_GH_PAT`. [Update any workflows](./docs/github-actions.md) to use this secret, excluding for stuff such as:
   * checking out the current repo with `actions/checkout`
   * setting up Node.js, Python, Rust, and Dart/Flutter
@@ -22,3 +23,9 @@ you need to create a new account and then ask him to add to an special Hydralite
 
 Documentation for project maintainers is available in [the `docs` directory](./docs). Just like the GitLab handbook, everyone can read and even contribute
 to that documentation, but most of the stuff written there are for maintainers only.
+
+## Bot misbehaving? Have any feedback to automated messages/actions? Need help?
+
+* Docs feedback: <https://github.com/hydralitebot/hydralitebot/discussions>
+* Main issue tracker: <https://github.com/hydralite/hydralite/issues>
+* Discord: <https://kutt.it/hydralite-discord> (short link will be go active soon)
